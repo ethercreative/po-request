@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="color-scheme" content="light dark" />
+	<meta name="supported-color-schemes" content="light dark" />
+	<title>PO Request</title>
+	<style type="text/css" rel="stylesheet" media="all">
+		body {
+			width: 100% !important;
+			height: 100%;
+			margin: 0;
+			-webkit-text-size-adjust: none;
+		}
+
+		a img {
+			border: none;
+		}
+
+		td {
+			word-break: break-word;
+		}
+
+		body,
+		td,
+		th {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		}
+
+		h1 {
+			margin: 0;
+			color: #10172A;
+			font-size: 32px;
+			line-height: 40px;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		h2 {
+			margin: 0;
+			color: #10172A;
+			font-size: 24px;
+			line-height: 32px;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		h3 {
+			margin: 0;
+			color: #ABABAB;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		h2 strong {
+			color: #10172A;
+		}
+
+		td,
+		th {
+			font-size: 16px;
+			line-height: 1.3em;
+		}
+
+		p,
+		ul,
+		ol,
+		blockquote {
+			margin: .4em 0 1.1875em;
+			font-size: 16px;
+			line-height: 1.625;
+		}
+
+		p.sub {
+			font-size: 13px;
+		}
+
+		body {
+			background-color: #F2F4F6;
+			color: #10172A;
+			font-weight: 300;
+		}
+
+		p {
+			color: #10172A;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+
+		.email-wrapper {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			-premailer-width: 100%;
+			-premailer-cellpadding: 0;
+			-premailer-cellspacing: 0;
+			background-color: #F2F4F6;
+		}
+
+		.email-content {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			-premailer-width: 100%;
+			-premailer-cellpadding: 0;
+			-premailer-cellspacing: 0;
+		}
+
+		.email-body {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			-premailer-width: 100%;
+			-premailer-cellpadding: 0;
+			-premailer-cellspacing: 0;
+		}
+
+		.email-body_inner {
+			width: 740px;
+			margin: 0 auto;
+			-premailer-width: 740px;
+			-premailer-cellpadding: 0;
+			-premailer-cellspacing: 0;
+			background-color: #FFFFFF;
+
+			border: 1px solid #DBE1E9;
+			box-shadow: 0 5px 12px 0 rgba(41, 49, 68, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+			border-radius: 16px;
+		}
+
+		.header {
+			padding: 56px 56px 0 56px;
+		}
+		
+		.border-top {
+			border-top: 1px solid #E7ECF3;
+		}
+		
+		.border-right {
+			border-right: 1px solid #E7ECF3;
+		}
+
+		.line-items {
+			background: #F8FAFC;
+		}
+
+		.line-item {
+			padding: 0 56px;
+		}
+
+		.line-item span {
+			font-size: 13px;
+		}
+
+		.line-item span.heading {
+			font-size: 12px;
+		}
+
+		.line-button {
+			padding: 6px 16px;
+			background: #FFFFFF;
+			border: 1px solid #D5DCE4;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+			border-radius: 8px;
+		}
+
+		.line-button td {
+			font-size: 14px !important;
+			font-weight: 600;
+		}
+
+		.line-button.approve {
+			color: #22C55D;
+		}
+
+		.line-button.reject {
+			color: #EF4444;
+		}
+
+		.primary-button {
+			width: 100%;
+			padding: 10px 0;
+
+			color: #ffffff;
+			text-align: center;
+			font-weight: 600;
+
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+			border-radius: 8px;
+		}
+
+		.primary-button.approve {
+			background: #22C55D;
+			border: 1px solid #1a9d4a;
+		}
+
+		.primary-button.reject {
+			background: #EF4444;
+			border: 1px solid #bf3636;
+		}
+
+		.content-cell {
+			padding: 45px;
+		}
+
+		.heading {
+			display: block;
+			margin-top: 16px;
+			opacity: 0.5;
+
+			font-size: 12px;
+			font-weight: 600;
+			color: #10172A;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+		}
+		
+		.buttons {
+			padding: 0 56px;
+		}
+
+		/*Media Queries ------------------------------ */
+
+		@media only screen and (max-width: 640px) {
+
+			.email-body_inner,
+			.email-footer {
+				width: 100% !important;
+			}
+		}
+		
+		@media only screen and (max-width: 500px) {
+			.mobile-hide {
+				display: none;
+			}
+			.mobile-wide {
+				display: block;
+				width: 100% !important;
+			}
+			.header {
+				padding: 40px 32px 0 32px;
+			}
+			.line-item,
+			.buttons {
+				padding: 0 32px;
+			}
+			.line-button {
+				margin-top: 16px;
+			}
+			.primary-button:first-child {
+				margin-bottom: 24px;
+			}
+			h1 {
+				font-size: 24px;
+			}
+			h3 {
+				font-size: 14px;
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+
+			body,
+			.email-body,
+			.email-body_inner,
+			.email-content {
+				background-color: #151515 !important;
+				color: #FFF !important;
+			}
+
+			p,
+			ul,
+			ol,
+			blockquote,
+			h1,
+			h2,
+			h3,
+			span,
+			.purchase_item {
+				color: #FFF !important;
+			}
+			
+			.email-body_inner {
+				box-shadow: none;
+			}
+
+			.line-items {
+				background: #101010;
+			}
+			
+			.line-button {
+				background: #000000;
+				border-color: #000000;
+			}
+			
+			.email-body_inner,
+			.border-top,
+			.border-right {
+				border-color: #000000;
+			}
+
+		}
+
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
+	</style>
+</head>
+
+<body>
+	<table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+		<tr>
+			<td align="center">
+				<table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+					<tr>
+						<td height="80" cellpadding="0" cellspacing="0"></td>
+					</tr>
+					<tr>
+						<td class="email-body" width="740" cellpadding="0" cellspacing="0">
+							<table class="email-body_inner" align="center" width="740" cellpadding="0" cellspacing="0" role="presentation">
+								<tr>
+									<td>
+										<table class="header" align="center" cellpadding="0" cellspacing="0" role="presentation">
+											<tr>
+												<td>
+													<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+														<tr>
+															<td colspan="3">
+																<a href="https://www.sonymusic.co.uk">
+																<img width="220" src="data:image/png;base64,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" /></td>
+																</a>
+														</tr>
+														<tr>
+															<td colspan="3" height="32"></td>
+														</tr>
+														<tr>
+															<td class="mobile-wide">
+																<h3>Your approval is needed on</h3>
+																<h1>PO# 0000004180</h1>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td class="mobile-wide">
+																<h3>Created by <strong>Kristine Toone</strong></h3>
+																<h1>USD $52,000.00</h1>
+															</td>
+														</tr>
+														<tr colspan="3">
+															<td height="24"></td>
+														</tr>
+														<tr>
+															<td colspan="3" class="border-top"></td>
+														</tr>
+													</table>
+													<table>
+														<tr colspan="5">
+															<td height="16"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">PO Description</span>
+																<span>It is a long established fact that the reader will be distracted by the readable.</span>
+															</td>
+
+															<td width="32" class="mobile-hide"></td>
+															<td class="border-right mobile-hide"></td>
+															<td width="32" class="mobile-hide"></td>
+
+															<td width="281" class="mobile-wide">
+																<span class="heading">Vendor</span>
+																<span>45PRESS INC</span>
+
+																<span class="heading">Payment Method</span>
+																<span>ACH</span>
+															</td>
+														</tr>
+														<tr colspan="5">
+															<td height="16"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table width="100%" cellpadding="0" cellspacing="0" role="presentation" class="line-items">
+											<tr>
+												<td class="border-top"></td>
+											<tr>
+											<tr>
+												<td>
+													<table class="line-item">
+														<tr>
+															<td colspan="3" height="8"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Item 1</span>
+																<span>[Amt: 26000.00] - FY2023</span>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<span class="heading">Profit Center</span>
+																<span>US9999 - GLOBAL SAP DEFAULT</span>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" height="4"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Description</span>
+																<span>Web Support - 6/22</span>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<span class="heading">Budget</span>
+																<span>2000512F - Web Hosting/Operations/Consulting Fees/45Press/8281000000</span>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" height="4"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Artist/Title</span>
+																<span>Various Non-Recording/Global SAP Default</span>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<span class="heading">Royalty</span>
+																<span>—</span>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" height="4"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Amount</span>
+																<h2>USD $16,000.00</h2>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+																	<tr>
+																		<td style="width: 50%;">
+																			<a href="#">
+																				<table cellpadding="0" cellspacing="0" role="presentation" class="line-button approve">
+																					<tr>
+																						<td>Approve Item</td>
+																					</tr>
+																				</table>
+																			</a>
+																		</td>
+																		<td style="width: 50%;">
+																			<a href="#">
+																				<table cellpadding="0" cellspacing="0" role="presentation" class="line-button reject">
+																					<tr>
+																						<td>Reject Item</td>
+																					</tr>
+																				</table>
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="16"></td>
+														</tr>
+														<tr>
+															<td colspan="3" class="border-top"></td>
+														</tr>
+													</table>
+													<table class="line-item">
+														<tr>
+															<td colspan="3" height="8"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Item 1</span>
+																<span>[Amt: 26000.00] - FY2023</span>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<span class="heading">Profit Center</span>
+																<span>US9999 - GLOBAL SAP DEFAULT</span>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" height="4"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Description</span>
+																<span>Web Support - 6/22</span>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<span class="heading">Budget</span>
+																<span>2000512F - Web Hosting/Operations/Consulting Fees/45Press/8281000000</span>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" height="4"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Artist/Title</span>
+																<span>Various Non-Recording/Global SAP Default</span>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<span class="heading">Royalty</span>
+																<span>—</span>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3" height="4"></td>
+														</tr>
+														<tr>
+															<td width="281" valign="top" class="mobile-wide">
+																<span class="heading">Amount</span>
+																<h2>USD $16,000.00</h2>
+															</td>
+															<td width="64" class="mobile-hide"></td>
+															<td width="281" class="mobile-wide">
+																<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+																	<tr>
+																		<td style="width: 50%;">
+																			<a href="#">
+																				<table cellpadding="0" cellspacing="0" role="presentation" class="line-button approve">
+																					<tr>
+																						<td>Approve Item</td>
+																					</tr>
+																				</table>
+																			</a>
+																		</td>
+																		<td style="width: 50%;">
+																			<a href="#">
+																				<table cellpadding="0" cellspacing="0" role="presentation" class="line-button reject">
+																					<tr>
+																						<td>Reject Item</td>
+																					</tr>
+																				</table>
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="32"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="border-top"></td>
+											<tr>
+										</table>
+										<table width="100%" cellpadding="0" cellspacing="0" role="presentation" class="buttons">
+											<tr>
+												<td colspan="3" height="40"></td>
+											</tr>
+											<tr>
+												<td width="308" valign="top" class="mobile-wide">
+													<a href="#">
+														<table cellpadding="0" cellspacing="0" role="presentation" class="primary-button approve">
+															<tr>
+																<td>Approve All</td>
+															</tr>
+														</table>
+													</a>
+												</td>
+
+												<td width="16" class="mobile-hide"></td>
+
+												<td width="308" class="mobile-wide">
+													<a href="#">
+														<table cellpadding="0" cellspacing="0" role="presentation" class="primary-button reject">
+															<tr>
+																<td>Reject All</td>
+															</tr>
+														</table>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3" height="40"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="80" cellpadding="0" cellspacing="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
