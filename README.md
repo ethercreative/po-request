@@ -16,4 +16,4 @@ A responsive email template for a PO request.
   
 ### Video Preview
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RfCdIiPhylc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video Preview](http://img.youtube.com/vi/RfCdIiPhylc/0.jpg)](http://www.youtube.com/watch?v=RfCdIiPhylc "Video Preview")
