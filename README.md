@@ -10,6 +10,6 @@ A responsive email template for a PO request.
 - [x] Add responsive styling
 - [x] Add dark mode support
 - [ ] Check support in major email clients
- - [ ] Outlook (determine which versions)
- - [ ] Apple Mail iOS + MacOS
- - [ ] Gmail
+  - [ ] Outlook (determine which versions)
+  - [ ] Apple Mail iOS + MacOS
+  - [ ] Gmail
